@@ -1,0 +1,11 @@
+version: "3"
+
+services:
+  airflow:
+    image: puckel/docker-airflow 
+    ports:
+      - "8080:8080"
+
+    environment:
+      - TZ=Asia/Seoul
+      - LC_ALL=C.UTF-8
