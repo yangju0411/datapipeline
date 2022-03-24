@@ -1,0 +1,3 @@
+# Postgre Dockerfile
+FROM postgres:12.4
+
