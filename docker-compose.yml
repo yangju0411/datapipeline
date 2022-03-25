@@ -2,16 +2,17 @@ version: "3"
 
 services:
   airflow:
-    image: puckel/docker-airflow 
+    build: ./docker-airflow
     ports:
       - "8080:8080"
 
     environment:
       - TZ=Asia/Seoul
       - LC_ALL=C.UTF-8
+      - FERNET_KEY="uE019HG1yZus7W414ZeHAmmGIF7CmW7WXBkOYpYKnak="
 
   postgre:
-    image: postgres:12.4
+    build: ./docker-postgre
     ports:
       - "5432:5432"
     environment:
