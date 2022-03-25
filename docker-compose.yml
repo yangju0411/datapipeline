@@ -2,7 +2,9 @@ version: "3"
 
 services:
   airflow:
-    build: ./docker-airflow
+    build: ./docker_airflow
+    depends_on:
+      - postgre
     ports:
       - "8080:8080"
 
@@ -12,7 +14,7 @@ services:
       - FERNET_KEY="uE019HG1yZus7W414ZeHAmmGIF7CmW7WXBkOYpYKnak="
 
   postgre:
-    build: ./docker-postgre
+    build: ./docker_postgre
     ports:
       - "5432:5432"
     environment:
