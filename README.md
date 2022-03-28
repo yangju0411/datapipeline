@@ -15,7 +15,7 @@
 Airflow를 통해 데이터 파이프라인의 워크플로우를 관리합니다. Airflow의 메타데이터 DB로는 PostgreSQL을 사용합니다.
 
 **관련 디렉토리**
-
+- [dags](/docker_airflow/dags/)
 - [docker-airflow](/docker_airflow/)
 - [docker-postgre](/docker_postgre/)
 
@@ -31,3 +31,5 @@ Airflow를 통해 데이터 파이프라인의 워크플로우를 관리합니�
 [AirFlow Manual on Docker](https://dorumugs.tistory.com/entry/AirFlow-Manual-on-Docker-stage-install)
 
 [Airflow 시작하기](https://lsjsj92.tistory.com/631)
+
+[Data Pipeline with Apache Airflow](https://github.com/K9Ns/data-pipelines-with-apache-airflow)
