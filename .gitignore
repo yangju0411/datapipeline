@@ -1,3 +1,4 @@
-/log_data
+/log_data/data
+/log_data/source_data
 
 *.pyc
