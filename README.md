@@ -29,6 +29,17 @@
 ## Data Pipeline
 [Simple Data Pipeline Project](https://github.com/yansfil/grab-data-world)
 
+[Pubg-ETL-Pipeline](https://github.com/danielgyu/Pubg-ETL-Pipeline)
+
+[ETL-Pipeline](https://github.com/renatootescu/ETL-pipeline)
+
+## DW
+[타다 (TADA) 서비스의 데이터 웨어하우스 : 태초부터 현재까지](https://speakerdeck.com/vcnc/tada-tada-seobiseuyi-deiteo-weeohauseu-taecobuteo-hyeonjaeggaji?slide=29)
+
+[웹로그 분석을 위한 데이터 웨어하우스 시스템 구축](http://koreascience.kr/article/CFKO201035751420664.page?&lang=ko)
+
+팩트 테이블 - 빅데이터를 지탱하는 기술 p.80, p.119
+
 ## Airflow on Docker
 [Apache 공식 문서 Running Airflow in Docker](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
 
