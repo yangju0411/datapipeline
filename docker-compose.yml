@@ -12,6 +12,7 @@ services:
       - TZ=Asia/Seoul
       - LC_ALL=C.UTF-8
       - FERNET_KEY="uE019HG1yZus7W414ZeHAmmGIF7CmW7WXBkOYpYKnak="
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgre:5432/airflow
 
   postgre:
     build: ./docker_postgre
