@@ -84,7 +84,7 @@ SQL 쿼리가 상당 부분 호환되며 더 대용량의 데이터를 처리하
 
 [[AWS] Redshift의 특징들](https://jaemunbro.medium.com/aws-redshift-%EA%B8%B0%EC%B4%88%EC%A7%80%EC%8B%9D-987aedcb2830)
 
-## Airflow on Docker
+## Airflow
 [Apache 공식 문서 Running Airflow in Docker](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
 
 [AirFlow Manual on Docker](https://dorumugs.tistory.com/entry/AirFlow-Manual-on-Docker-stage-install)
@@ -92,3 +92,7 @@ SQL 쿼리가 상당 부분 호환되며 더 대용량의 데이터를 처리하
 [Airflow 시작하기](https://lsjsj92.tistory.com/631)
 
 [Data Pipeline with Apache Airflow](https://github.com/K9Ns/data-pipelines-with-apache-airflow)
+
+[Airflow dag내에서 모듈 사용](https://myohyun.tistory.com/318)
+
+시스템 간 데이터 이동하기 - Data Pipelines with Apache Airflow p.155

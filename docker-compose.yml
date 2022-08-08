@@ -13,6 +13,8 @@ services:
       - LC_ALL=C.UTF-8
       - FERNET_KEY="uE019HG1yZus7W414ZeHAmmGIF7CmW7WXBkOYpYKnak="
       - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgre:5432/airflow
+    volumes:
+      - "./dags:/usr/local/airflow/dags"
 
   postgre:
     build: ./docker_postgre
@@ -23,4 +25,4 @@ services:
       - POSTGRES_INITDB_ARGS=--encoding=UTF-8
       - TZ=Asia/Seoul
     volumes:
-      - /var/lib/postgresql/data:/var/lib/postgresql/data
+      - "/var/lib/postgresql/data:/var/lib/postgresql/data"
