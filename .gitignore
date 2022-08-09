@@ -1,4 +1,5 @@
 /log_data/data
 /log_data/source_data
+/logs
 
 *.pyc

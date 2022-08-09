@@ -22,10 +22,11 @@
 ## 스케줄러
 매번 쌓이는 로그를 실시간으로 처리하는 것이 아닌 데이터를 일괄 처리(batch processing)하는 작업이기 때문에 배치 작업에 적합한 워크플로우인 Airflow를 선택하였습니다. 
 
-그리하여 Airflow를 통해 데이터 파이프라인의 워크플로우를 관리합니다. Airflow의 메타데이터 DB로는 PostgreSQL을 사용합니다. 기본적으로 SQLite를 사용할 수 있으나 SQLite는 Airflow의 SequentialExecutor 밖에 사용하지 못하기 때문에 태스크를 병렬로 실행하지 못하고 순차적으로 실행하여 속도가 느립니다. 그렇기 때문에 병렬 처리가 가능하며 단일 호스트 환경에서 권장되는 LocalExecutor를 사용하기 위해 Postgre를 채용하게 되었습니다.
+그리하여 Airflow를 통해 데이터 파이프라인의 워크플로우를 관리합니다. Airflow의 메타데이터 DB로는 PostgreSQL을 사용합니다. 메시지 큐로 Redis를 두어 분산 처리가 가능한 CeleryExecutor를 사용합니다. 그러나 실제 worker는 도커 컨테이너 하나 뿐입니다.
+
 
 ## Data Lake
-AWS S3에 원본 데이터를 적재합니다. 
+AWS S3에 생성한 로우 데이터를 적재합니다. 
 
 ## ETL
 ETL 과정의 코드와 DW 설계는 [ETL_DW](https://github.com/yangju0411/etl_dw) 프로젝트에 기반합니다. 따라서 DB의 스키마는 해당 프로젝트를 참고해주시기 바랍니다.
