@@ -97,3 +97,5 @@ SQL 쿼리가 상당 부분 호환되며 더 대용량의 데이터를 처리하
 [Airflow dag내에서 모듈 사용](https://myohyun.tistory.com/318)
 
 시스템 간 데이터 이동하기 - Data Pipelines with Apache Airflow p.155
+
+[Airflow, S3 Connection](https://hevodata.com/learn/airflow-s3-connection/)

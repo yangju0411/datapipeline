@@ -2,4 +2,5 @@
 /log_data/source_data
 /logs
 
+aws_secret.txt
 *.pyc
