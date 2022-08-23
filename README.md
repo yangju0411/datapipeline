@@ -5,8 +5,16 @@
 
 회사에서 웹 서버를 운영 중이고 액세스 로그를 매일 다른 파일에 저장하게끔 관리한다고 가정합니다. 
 
+![Data Pipeline](attached/datapipeline.JPG)
+
 **주요 하위 프로젝트**
 - [ETL](https://github.com/yangju0411/etl_dw)
+
+## 주요 목표
+1. Airflow를 통한 스케줄링
+2. 데이터 레이크 AWS S3 (완료)
+3. 데이터웨어하우스 AWS Redshift
+4. ETL 작업은 Spark
 
 ## 데이터 소스
 데이터 소스는 직접 제작한 [로그 생성기](https://github.com/yangju0411/log_generator) 파이썬 라이브러리를 통해 제작합니다.
