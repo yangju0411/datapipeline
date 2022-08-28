@@ -37,7 +37,8 @@
 AWS S3에 생성한 로우 데이터를 적재합니다. 
 
 ## ETL
-ETL 과정의 코드와 DW 설계는 [ETL_DW](https://github.com/yangju0411/etl_dw) 프로젝트에 기반합니다. 따라서 DB의 스키마는 해당 프로젝트를 참고해주시기 바랍니다.
+ETL 과정의 코드와 DW 설계는 [ETL_DW](https://github.com/yangju0411/etl_dw) 프로젝트에 기반합니다. <br>
+테이블 설계에 대한 자세한 내용은 해당 [디렉토리](query/) 참조
 
 ### DW
 S3에서 로우 데이터를 가져와 처리 후 데이터 웨어하우스(AWS Redshift)에 적재합니다. 
@@ -93,6 +94,13 @@ SQL 쿼리가 상당 부분 호환되며 더 대용량의 데이터를 처리하
 
 [[AWS] Redshift의 특징들](https://jaemunbro.medium.com/aws-redshift-%EA%B8%B0%EC%B4%88%EC%A7%80%EC%8B%9D-987aedcb2830)
 
+[Redshift serverless 공식 문서](https://docs.aws.amazon.com/redshift/latest/mgmt/serverless-connecting.html)
+
+[Redshift 데이터베이스 개발자 안내서](https://docs.aws.amazon.com/ko_kr/redshift/latest/dg/r_CREATE_TABLE_NEW.html)
+
+[Redshift 열 압축](https://tkwon.tistory.com/2?category=1012291)
+
+[Redshift 열 압축 예제](https://docs.aws.amazon.com/ko_kr/redshift/latest/dg/Examples__compression_encodings_in_CREATE_TABLE_statements.html)
 ## Airflow
 [Apache 공식 문서 Running Airflow in Docker](https://airflow.apache.org/docs/apache-airflow/stable/start/docker.html)
 

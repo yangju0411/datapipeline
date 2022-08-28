@@ -40,11 +40,11 @@ load_to_s3 = PythonOperator(
     python_callable = _load_to_s3,
     dag = dag,
 )
-
+"""
 remove_local = BashOperator(
     task_id = "remove_local",
     bash_command = "rm /tmp/access_log/{{task_instance.xcom_pull(key = 'log_filename')}}",
     dag = dag
 )
-
-generate_logs >> load_to_s3 >> remove_local
+"""
+generate_logs >> load_to_s3 #>> remove_local
